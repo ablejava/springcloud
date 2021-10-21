@@ -1,0 +1,15 @@
+#spring:
+#  profiles:
+#    active: eureka1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka1/
+      register-with-eureka: false #取消自己注册自己
+#  server:
+#    enable-self-preservation: false
+spring:
+  application:
+    name: eureka1
+server:
+  port: 8761

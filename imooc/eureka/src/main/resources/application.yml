@@ -1,0 +1,12 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: false # 关闭客户端不断下线的红色提示，生产环境不要开启
+spring:
+  application:
+    name: eureka
+#server:
+management:
+  context-path: /
+#  port: 8761
